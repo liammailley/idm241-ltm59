@@ -178,3 +178,16 @@ a {
      align-items: center;
      font-size: 1.4rem;
 }
+.pic {
+     display: flex;
+     width: 100%;
+     height: auto;
+     margin: 1rem;
+     box-shadow: 5px 5px 20px;
+}
+.picfixer {
+     display: flex;
+     width: 40rem;
+     justify-content: space-between;
+     margin: auto;
+}
