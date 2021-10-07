@@ -48,11 +48,14 @@
                }
                .header_gif {
                     display: flex;
-                    width: auto;
                     height: auto;
                     margin: 1rem;
                     box-shadow: 5px 5px 20px;
                     border: 5px solid #f6da36;
+               }
+               .header_giffixer {
+                    display: flex;
+                    justify-content: space-between;
                }
                .boxes {
                     display: flex;
@@ -167,7 +170,10 @@
                     By Liam Mailley
                </h3>
           </div>
-          <img class="header_gif" src="images/semgeeks_microinteraction.gif">
+          <div class="header_giffixer">
+               <img class="header_gif" src="images/semgeeks_microinteraction.gif">
+               <img class="header_gif" src="images/semgeeks_microinteraction_2.gif">
+          </div>
      </header>
 
      <main>
@@ -194,8 +200,10 @@
                     <div class="rulesnfeedback_body">
                          <h2 class="rulesnfeedback_body_text">There are no rules that are not also feedback in this microinteraction.</h2>
                          <ul>
+                              <li>Button initially only contains the word 'Explore'</li>
                               <li>Hovering over button causes an arrow to appear in the box</li>
-                              <li>Text in button automatically moves to make room for arrow</li>
+                              <li>The words 'Digital Marketing Solutions' appear before arrow</li>
+                              <li>Button expands to make room for text and arrow</li>
                               <li>Text and arrow stay centered</li>
                               <li>Cursor changes to pointer</li>
                          </ul>
