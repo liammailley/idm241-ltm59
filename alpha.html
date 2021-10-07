@@ -1,12 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <link href="css/master.css" rel="stylesheet" type="text/css" media="all">
+     <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
+     <title>IDM 241 - Alpha</title>
+     <style>
+          @media only screen and (min-width: 1250px) { /* THIS ONE IS ONLY USED WHEN IT'S MORE THAN 1250px */
+               header {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+               }
+               main {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+               }
+               h2 {
+                    text-align: center;
+               }
+               h3 {
+                    text-align: center;
+               }
+               h1 {
+                    font-size: 4rem;
+                    margin: 2rem 2rem 2rem 2rem;
+               }
+               .header_text {
+                    display: flex;
+                    width: auto;
+                    flex-flow: column wrap;
+                    align-items: center;
+                    justify-content: flex-end;
+                    margin: 1rem 1rem 1rem 3rem;
+                    font-size: 2rem;
+               }
+               .header_text_top {
+                    display: flex;
+                    margin: 1rem 0;
+               }
+               .header_text_bot {
+                    display: flex;
+                    margin: 1rem 0;
+               }
+               .header_gif {
+                    display: flex;
+                    width: auto;
+                    height: auto;
+                    margin: 1rem;
+                    box-shadow: 5px 5px 20px;
+                    border: 5px solid #f6da36;
+               }
+               .boxes {
+                    display: flex;
+                    width: 100%;
+                    flex-flow: row wrap;
+                    align-content: center;
+               }
+               .url_box {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    width: 100%;
+                    justify-content: space-evenly;
+                    margin: 1rem 0 1rem 0;
+                    background-color: #f6da36;
+               }
+               .url_header {
+                    display: flex;
+                    align-items: center;
+                    width: 25%;
+               }
+               .url_body {
+                    display: flex;
+                    width: 75%;
+                    background-color: #f0f0f0;
+                    justify-content: flex-start;
+                    align-items: center;
+                    font-size: 1.4rem;
+               }
+               a {
+                    margin-left: 1.5rem;
+               }
+               .triggers_box {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    width: 100%;
+                    justify-content: space-evenly;
+                    margin: 1rem 0 1rem 0;
+                    background-color: #f6da36;
+               }
+               .triggers_header {
+                    display: flex;
+                    font-size: 3rem;
+                    width: 33%;
+               }
+               .triggers_body {
+                    display: flex;
+                    width: 66%;
+                    background-color: #f0f0f0;
+                    justify-content: flex-start;
+                    align-items: center;
+                    font-size: 1.4rem;
+               }
+               .rulesnfeedback_box {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    width: 100%;
+                    justify-content: space-evenly;
+                    margin: 1rem 0 1rem 0;
+                    background-color: #f6da36;
+               }
+               .rulesnfeedback_header {
+                    display: flex;
+                    justify-content: flex-end;
+                    font-size: 3rem;
+                    width: 33%;
+               }
+               .rulesnfeedback_body {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    width: 66%;
+                    background-color: #f0f0f0;
+                    justify-content: flex-start;
+                    align-items: center;
+                    font-size: 1.4rem;
+               }
+               .rulesnfeedback_body_text {
+                    display: flex;
+                    width: 100%;
+               }
+               .loopsnmodes_box {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    width: 100%;
+                    justify-content: space-evenly;
+                    margin: 1rem 0 1rem 0;
+                    background-color: #f6da36;
+               }
+               .loopsnmodes_header {
+                    display: flex;
+                    justify-content: flex-end;
+                    font-size: 3rem;
+                    width: 33%;
+               }
+               .loopsnmodes_body {
+                    display: flex;
+                    width: 66%;
+                    background-color: #f0f0f0;
+                    justify-content: flex-start;
+                    align-items: center;
+                    font-size: 1.4rem;
+               }
+          }
+     </style>
 </head>
 <body>
-     
+     <header>
+          <div class="header_text">
+               <h2 class="header_text_top">
+                    IDM 241 - Alpha
+               </h2>
+               <h3 class="header_text_bot">
+                    By Liam Mailley
+               </h3>
+          </div>
+          <img class="header_gif" src="semgeeks_microinteraction.gif">
+     </header>
+
+     <main>
+          <div class="boxes">
+               <div class="url_box">
+                    <h1 class="url_header">
+                         URL
+                    </h1>
+                    <div class="url_body">
+                         <a href="https://semgeeks.com/" target="_blank">semgeeks.com</a>
+                    </div>
+               </div>
+               <div class="triggers_box">
+                    <h1 class="triggers_header">
+                         Triggers
+                    </h1>
+                    <div class="triggers_body">
+                         <ul>
+                              <li>Hover</li>
+                              <li>Click</li>
+                         </ul>
+                    </div>
+               </div>
+               <div class="rulesnfeedback_box">
+                    <div class="rulesnfeedback_body">
+                         <h2 class="rulesnfeedback_body_text">There are no rules that are not also feedback in this microinteraction.</h2>
+                         <ul>
+                              <li>Hovering over button causes an arrow to appear in the box</li>
+                              <li>Text in button automatically moves to make room for arrow</li>
+                              <li>Text and arrow stay centered</li>
+                              <li>Cursor changes to pointer</li>
+                         </ul>
+                    </div>
+                    <h1 class="rulesnfeedback_header">
+                         Rules &amp; Feedback
+                    </h1>
+               </div>
+               <div class="loopsnmodes_box">
+                    <div class="loopsnmodes_body">
+                         <ul>
+                              <li>Microinteraction does not occur on mobile devices</li>
+                         </ul>
+                    </div>
+                    <h1 class="loopsnmodes_header">
+                         Loops &amp; Modes
+                    </h1>
+               </div>
+          </div>
+     </main>
 </body>
 </html>

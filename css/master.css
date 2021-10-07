@@ -1,0 +1,176 @@
+/* General Styling */
+
+body {
+     margin: 0;
+}
+p {
+     font-family: 'Aktiv Grotesk Corp', Georgia, "Times New Roman", Times, serif;
+}
+h1 {
+     font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+     color: black;
+}
+h2 {
+     font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+     color: #348dd8;
+}
+h3 {
+     font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+}
+a {
+     font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+     font-size: 2rem;  
+}
+ul {
+     font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+     font-size: 1.2rem;   
+}
+
+/* THIS ONE IS ONLY USED WHEN IT'S LESS THAN 1250px */
+
+header {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-between;
+}
+main {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+h2 {
+     text-align: center;
+}
+h3 {
+     text-align: center;
+}
+h1 {
+     font-size: 4rem;
+     margin: 2rem 2rem 2rem 2rem;
+}
+.header_text {
+     display: flex;
+     width: 100%;
+     flex-flow: column nowrap;
+     align-items: center;
+     justify-content: center;
+     margin: 1rem 1rem 1rem 3rem;
+     font-size: 2rem;
+}
+.header_text_top {
+     display: flex;
+     justify-content: center;
+     margin: 1rem 0;
+}
+.header_text_bot {
+     display: flex;
+     justify-content: center;
+     margin: 1rem 0;
+}
+.header_gif {
+     display: flex;
+     width: 100%;
+     height: auto;
+     margin: 1rem;
+     box-shadow: 5px 5px 20px;
+}
+.boxes {
+     display: flex;
+     width: 100%;
+     flex-flow: row wrap;
+     align-content: center;
+}
+.url_box {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     justify-content: space-evenly;
+     margin: 1rem 0 1rem 0;
+     background-color: #f6da36;
+}
+.url_header {
+     display: flex;
+     align-items: center;
+     width: 100%;
+}
+.url_body {
+     display: flex;
+     width: 100%;
+     background-color: #f0f0f0;
+     justify-content: flex-start;
+     align-items: center;
+     font-size: 1.4rem;
+}
+a {
+     margin-left: 1.5rem;
+}
+.triggers_box {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     justify-content: space-evenly;
+     margin: 1rem 0 1rem 0;
+     background-color: #f6da36;
+}
+.triggers_header {
+     display: flex;
+     font-size: 3rem;
+     width: 100%;
+}
+.triggers_body {
+     display: flex;
+     width: 100%;
+     background-color: #f0f0f0;
+     justify-content: flex-start;
+     align-items: center;
+     font-size: 1.4rem;
+}
+.rulesnfeedback_box {
+     display: flex;
+     flex-wrap: wrap-reverse;
+     width: 100%;
+     justify-content: space-evenly;
+     margin: 1rem 0 1rem 0;
+     background-color: #f6da36;
+}
+.rulesnfeedback_header {
+     display: flex;
+     justify-content: flex-end;
+     font-size: 3rem;
+     width: 100%;
+}
+.rulesnfeedback_body {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     background-color: #f0f0f0;
+     justify-content: flex-start;
+     align-items: center;
+     font-size: 1.4rem;
+}
+.rulesnfeedback_body_text {
+     display: flex;
+     width: 33%;
+}
+.loopsnmodes_box {
+     display: flex;
+     flex-wrap: wrap-reverse;
+     width: 100%;
+     justify-content: space-evenly;
+     margin: 1rem 0 1rem 0;
+     background-color: #f6da36;
+}
+.loopsnmodes_header {
+     display: flex;
+     justify-content: flex-end;
+     font-size: 3rem;
+     width: 100%;
+}
+.loopsnmodes_body {
+     display: flex;
+     width: 100%;
+     background-color: #f0f0f0;
+     justify-content: flex-start;
+     align-items: center;
+     font-size: 1.4rem;
+}
