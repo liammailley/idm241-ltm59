@@ -23,7 +23,13 @@ a {
 }
 ul {
      font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
-     font-size: 1.2rem;   
+     font-size: 1.2rem;
+     margin-right: 0.5rem;
+}
+a {
+     font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+     margin-left: 1.5rem;
+     padding: 0.75rem 0 0.75rem 0;
 }
 
 /* THIS ONE IS ONLY USED WHEN IT'S LESS THAN 1250px */
@@ -105,9 +111,7 @@ h1 {
      align-items: center;
      font-size: 1.4rem;
 }
-a {
-     margin-left: 1.5rem;
-}
+
 .triggers_box {
      display: flex;
      flex-wrap: wrap;
@@ -155,6 +159,7 @@ a {
 .rulesnfeedback_body_text {
      display: flex;
      width: 33%;
+     margin-left: 2rem;
 }
 .loopsnmodes_box {
      display: flex;
@@ -190,4 +195,66 @@ a {
      width: 40rem;
      justify-content: space-between;
      margin: auto;
+}
+
+/* Code for Build */
+
+a.tracking-in-expand {
+     display: flex;
+     justify-content: center;
+     color: white;
+     text-decoration: none;
+     text-align: center;
+     background-color: #348dd8;
+     font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+     font-size: 2rem;
+     padding: 4px;
+     margin: 0 1rem 0 1rem;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+     border-radius: 8px;
+     -webkit-box-shadow: 0px 9px 0px #2475be, 0px 9px 25px rgba(0,0,0,.7);
+     -moz-box-shadow: 0px 9px 0px #2475be, 0px 9px 25px rgba(0,0,0,.7);
+     box-shadow: 0px 9px 0px #2475be, 0px 9px 25px rgba(0,0,0,.7);
+
+     transition: all .1s ease;
+}
+
+a.tracking-in-expand:active {
+     -webkit-box-shadow: 0px 3px 0px #0d4f8b, 0px 3px 6px rgba(0,0,0,.9);
+     -moz-box-shadow: 0px 3px 0px #0d4f8b, 0px 3px 6px rgba(0,0,0,.9);
+     box-shadow: 0px 3px 0px #0d4f8b, 0px 3px 6px rgba(0,0,0,.9);
+}
+
+a.tracking-in-expand:hover:after {
+     content:" Digital Marketing Solutions ➜";
+     -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* Code for Text Animation */
+
+@-webkit-keyframes tracking-in-expand {
+     0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+     }
+     40% {
+          opacity: 0.6;
+     }
+     100% {
+          opacity: 1;
+     }
+}
+@keyframes tracking-in-expand {
+     0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+     }
+     40% {
+          opacity: 0.6;
+     }
+     100% {
+          opacity: 1;
+     }
 }

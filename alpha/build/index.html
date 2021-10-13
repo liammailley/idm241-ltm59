@@ -86,6 +86,8 @@
                }
                a {
                     margin-left: 1.5rem;
+                    display: inline-block;
+                    width: 10rem;
                }
                .triggers_box {
                     display: flex;
@@ -157,6 +159,46 @@
                     align-items: center;
                     font-size: 1.4rem;
                }
+               .buildbox {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    width: 100%;
+                    justify-content: space-evenly;
+                    margin: 2rem 0 2rem 0;
+               }
+
+               /* Code for Build */
+
+               a.tracking-in-expand {
+                    display: inline-block;
+                    width: 40rem;
+                    color: white;
+                    text-decoration: none;
+                    text-align: center;
+                    background-color: #348dd8;
+                    font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+                    font-size: 2rem;
+                    padding: 4px;
+                    margin: 0 0 0 1rem;
+                    -webkit-border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    border-radius: 8px;
+                    -webkit-box-shadow: 0px 9px 0px #2475be, 0px 9px 25px rgba(0,0,0,.7);
+                    -moz-box-shadow: 0px 9px 0px #2475be, 0px 9px 25px rgba(0,0,0,.7);
+                    box-shadow: 0px 9px 0px #2475be, 0px 9px 25px rgba(0,0,0,.7);
+
+                    transition: all .1s ease;
+               }
+               a.tracking-in-expand:active {
+                    -webkit-box-shadow: 0px 3px 0px #0d4f8b, 0px 3px 6px rgba(0,0,0,.9);
+                    -moz-box-shadow: 0px 3px 0px #0d4f8b, 0px 3px 6px rgba(0,0,0,.9);
+                    box-shadow: 0px 3px 0px #0d4f8b, 0px 3px 6px rgba(0,0,0,.9);
+               }
+               a.tracking-in-expand:hover:after {
+                    content:" Digital Marketing Solutions ➜";
+                    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+               }
           }
      </style>
 </head>
@@ -170,11 +212,17 @@
                     By Liam Mailley
                </h3>
           </div>
-          <div class="header_giffixer">
+          <!--<div class="header_giffixer">
                <img class="header_gif" src="images/semgeeks_microinteraction.gif">
                <img class="header_gif" src="images/semgeeks_microinteraction_2.gif">
-          </div>
+          </div>-->
      </header>
+
+     <div class="buildbox">
+          <div class="build">
+               <a href="javascript:void(0);" class="tracking-in-expand">Explore</a>
+          </div>
+     </div>
 
      <main>
           <div class="boxes">
@@ -196,10 +244,6 @@
                          </ul>
                     </div>
                </div>
-               <div class="picfixer">
-                    <img class="pic" src="images/explore.png">
-                    <img class="pic" src="images/explore-expand.png">
-               </div>
                <div class="rulesnfeedback_box">
                     <div class="rulesnfeedback_body">
                          <h2 class="rulesnfeedback_body_text">There are no rules that are not also feedback in this microinteraction.</h2>
@@ -207,7 +251,7 @@
                               <li>Button initially only contains the word 'Explore'</li>
                               <li>Hovering over button causes an arrow to appear in the box</li>
                               <li>The words 'Digital Marketing Solutions' appear before arrow</li>
-                              <li>Button expands to make room for text and arrow</li>
+                              <!--<li>Button expands to make room for text and arrow</li>-->
                               <li>Text and arrow stay centered</li>
                               <li>Cursor changes to pointer</li>
                          </ul>
