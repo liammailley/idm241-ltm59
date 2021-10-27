@@ -217,7 +217,7 @@ a.tracking-in-expand {
      -moz-box-shadow: 0px 9px 0px #2475be, 0px 9px 25px rgba(0,0,0,.7);
      box-shadow: 0px 9px 0px #2475be, 0px 9px 25px rgba(0,0,0,.7);
 
-     transition: all .1s ease;
+     transition: all .5s ease;
 }
 
 a.tracking-in-expand:active {
@@ -258,3 +258,38 @@ a.tracking-in-expand:hover:after {
           opacity: 1;
      }
 }
+
+/* Dropdown Menu Code (https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover) */
+
+.dropdown {
+     position: relative;
+     display: inline-block;
+}
+
+.dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f1f1f1;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+}
+
+.build:hover .dropdown-content {
+     display: block;
+}
+
+.dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.build:hover .dropdown-content {
+     display: block;
+}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}

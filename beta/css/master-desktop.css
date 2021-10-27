@@ -177,7 +177,7 @@
           -moz-box-shadow: 0px 9px 0px #2475be, 0px 9px 25px rgba(0,0,0,.7);
           box-shadow: 0px 9px 0px #2475be, 0px 9px 25px rgba(0,0,0,.7);
 
-          transition: all .1s ease;
+          transition: all .5s ease-in-out;
      }
      a.tracking-in-expand:active {
           -webkit-box-shadow: 0px 3px 0px #0d4f8b, 0px 3px 6px rgba(0,0,0,.9);
@@ -188,5 +188,85 @@
           content:" Digital Marketing Solutions ➜";
           -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
           animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          animation-direction: alternate;
      }
+}
+
+/* Code for Text Animation */
+
+@-webkit-keyframes tracking-in-expand {
+     0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+     }
+     40% {
+          opacity: 0.6;
+     }
+     100% {
+          opacity: 1;
+     }
+}
+@keyframes tracking-in-expand {
+     0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+     }
+     40% {
+          opacity: 0.6;
+     }
+     100% {
+          opacity: 1;
+     }
+}
+
+/* Dropdown Menu Code (https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover) */
+
+.dropdown {
+     position: relative;
+     display: inline-block;
+}
+
+.dropdown-content {
+     display: none;
+     position: absolute;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     background-color: #53A0DF;
+     z-index: 1;
+     width: 40rem;
+     color: white;
+     padding: 4px;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+     border-radius: 8px;
+     -webkit-box-shadow: 0px 9px 0px #4197DC, 0px 9px 25px rgba(0,0,0,.7);
+     -moz-box-shadow: 0px 9px 0px #4197DC, 0px 9px 25px rgba(0,0,0,.7);
+     box-shadow: 0px 9px 0px #4197DC, 0px 9px 25px rgba(0,0,0,.7);
+}
+
+.dropdown-item {
+     color: white;
+     width: 100%;
+     background-color: #53A0DF;
+}
+
+.build:hover .dropdown-content {
+     display: block;
+     -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+     animation-delay: 0.5s;
+     animation-direction: alternate;
+}
+
+.dropdown-content a {
+     color: white;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.build:hover .dropdown-content {
+     display: block;
 }
