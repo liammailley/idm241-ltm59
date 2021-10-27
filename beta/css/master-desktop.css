@@ -247,7 +247,6 @@
 .dropdown-item {
      color: white;
      width: 100%;
-     background-color: #53A0DF;
 }
 
 .build:hover .dropdown-content {
@@ -262,11 +261,5 @@
      color: white;
      padding: 12px 16px;
      text-decoration: none;
-     display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.build:hover .dropdown-content {
      display: block;
 }

@@ -9,38 +9,25 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>IDM 241 - Beta</title>
+     <title>IDM 241 - Beta Build</title>
 </head>
 
 <body>
      <header>
           <div class="header_text">
                <h2 class="header_text_top">
-                    IDM 241 - Beta
+                    IDM 241 - Beta Build
                </h2>
                <h3 class="header_text_bot">
                     By Liam Mailley
                </h3>
           </div>
-          <!--<div class="header_giffixer">
-               <img class="header_gif" src="images/semgeeks_microinteraction.gif">
-               <img class="header_gif" src="images/semgeeks_microinteraction_2.gif">
-          </div>-->
-     </header>
-
-     <div class="buildbox">
-          <div class="build" class="dropdown">
-               <a href="javascript:void(0);" class="tracking-in-expand">Explore</a>
-               <div class="dropdown-content">
-                    <a href="https://semgeeks.com/solution/digital-marketing/seo/" class="dropdown-item">Search engine optimization (SEO)</a>
-                    <a href="https://semgeeks.com/solution/digital-marketing/ppc/" class="dropdown-item">Pay per click (PPC)</a>
-                    <a href="https://semgeeks.com/solution/digital-marketing/content/" class="dropdown-item">Content marketing</a>
-                    <a href="https://semgeeks.com/solution/digital-marketing/social-media/" class="dropdown-item">Social media marketing</a>
-                    <a href="https://semgeeks.com/solution/digital-marketing/email-marketing/" class="dropdown-item">Email marketing</a>
-                    <a href="https://semgeeks.com/solution/digital-marketing/digital-marketing-analytics/" class="dropdown-item">Analytics</a>
-               </div>
+          <div class="header_giffixer">
+               <img class="header_gif" src="images/beta1.png">
+               <img class="header_gif" src="images/beta2.png">
+               <img class="header_gif" src="images/beta3.png">
           </div>
-     </div>
+     </header>
 
      <main>
           <div class="boxes">
@@ -69,10 +56,14 @@
                          <ul>
                               <li>Button initially only contains the word 'Explore'</li>
                               <li>Hovering over button causes the words "Digital Marketing Solutions", as well as an arrow, to fade in</li>
-                              <!--<li>Button expands to make room for text and arrow</li>-->
                               <li>Text and arrow stay centered</li>
                               <li>On hover, Cursor changes to pointer</li>
                               <li>Button appears to indent on click/tap</li>
+                              <li>After 0.7s, if a user stays hovered on the button, a drop down menu will appear</li>
+                              <li>Upon unhovering, "Digital Marketing Solutions" and the arrow will fade out</li>
+                              <li>The dropdown menu will also retract upon unhovering</li>
+                              <li>On mobile devices only, tapping on the main button will retract the menu and make "Digital Marketing Solutions" and the arrow fade away</li>
+                              <li>On mobile devices only, when tapped, "Digital Marketing Solutions" and the arrow will fade in and the menu will appear, since hover is not available</li>
                          </ul>
                     </div>
                     <h1 class="rulesnfeedback_header">
@@ -86,7 +77,17 @@
                          </ul>
                     </div>
                     <h1 class="loopsnmodes_header">
-                         Loops &amp; Modes
+                         Loops
+                    </h1>
+               </div>
+               <div class="loopsnmodes_box">
+                    <div class="loopsnmodes_body">
+                         <ul>
+                              <li>On mobile devices, users cannot hover. Therefore, the microinteration uses only tap triggers.</li>
+                         </ul>
+                    </div>
+                    <h1 class="loopsnmodes_header">
+                         Modes
                     </h1>
                </div>
           </div>
