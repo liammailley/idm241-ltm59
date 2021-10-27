@@ -1,0 +1,295 @@
+/* General Styling */
+
+body {
+     margin: 0;
+}
+p {
+     font-family: 'Aktiv Grotesk Corp', Georgia, "Times New Roman", Times, serif;
+}
+h1 {
+     font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+     color: black;
+}
+h2 {
+     font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+     color: #348dd8;
+}
+h3 {
+     font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+}
+a {
+     font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+     font-size: 2rem;  
+}
+ul {
+     font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+     font-size: 1.2rem;
+     margin-right: 0.5rem;
+}
+a {
+     font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+     margin-left: 1.5rem;
+     padding: 0.75rem 0 0.75rem 0;
+}
+
+/* THIS ONE IS ONLY USED WHEN IT'S LESS THAN 1250px */
+
+header {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-between;
+}
+main {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+h2 {
+     text-align: center;
+}
+h3 {
+     text-align: center;
+}
+h1 {
+     font-size: 4rem;
+     margin: 2rem 2rem 2rem 2rem;
+}
+.header_text {
+     display: flex;
+     width: 100%;
+     flex-flow: column nowrap;
+     align-items: center;
+     justify-content: center;
+     margin: 1rem 1rem 1rem 1rem;
+     font-size: 2rem;
+}
+.header_text_top {
+     display: flex;
+     justify-content: center;
+     margin: 1rem 0;
+}
+.header_text_bot {
+     display: flex;
+     justify-content: center;
+     margin: 1rem 0;
+}
+.header_gif {
+     display: flex;
+     width: 100%;
+     height: auto;
+     margin: 1rem;
+     box-shadow: 5px 5px 20px;
+}
+.header_giffixer {
+     display: flex;
+     justify-content: space-between;
+}
+.boxes {
+     display: flex;
+     width: 100%;
+     flex-flow: row wrap;
+     align-content: center;
+}
+.url_box {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     justify-content: space-evenly;
+     margin: 1rem 0 1rem 0;
+     background-color: #f6da36;
+}
+.url_header {
+     display: flex;
+     align-items: center;
+     width: 100%;
+}
+.url_body {
+     display: flex;
+     width: 100%;
+     background-color: #f0f0f0;
+     justify-content: flex-start;
+     align-items: center;
+     font-size: 1.4rem;
+}
+
+.triggers_box {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     justify-content: space-evenly;
+     margin: 1rem 0 1rem 0;
+     background-color: #f6da36;
+}
+.triggers_header {
+     display: flex;
+     font-size: 3rem;
+     width: 100%;
+}
+.triggers_body {
+     display: flex;
+     width: 100%;
+     background-color: #f0f0f0;
+     justify-content: flex-start;
+     align-items: center;
+     font-size: 1.4rem;
+}
+.rulesnfeedback_box {
+     display: flex;
+     flex-wrap: wrap-reverse;
+     width: 100%;
+     justify-content: space-evenly;
+     margin: 1rem 0 1rem 0;
+     background-color: #f6da36;
+}
+.rulesnfeedback_header {
+     display: flex;
+     justify-content: flex-end;
+     font-size: 3rem;
+     width: 100%;
+}
+.rulesnfeedback_body {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     background-color: #f0f0f0;
+     justify-content: flex-start;
+     align-items: center;
+     font-size: 1.4rem;
+}
+.rulesnfeedback_body_text {
+     display: flex;
+     width: 33%;
+     margin-left: 2rem;
+}
+.loopsnmodes_box {
+     display: flex;
+     flex-wrap: wrap-reverse;
+     width: 100%;
+     justify-content: space-evenly;
+     margin: 1rem 0 1rem 0;
+     background-color: #f6da36;
+}
+.loopsnmodes_header {
+     display: flex;
+     justify-content: flex-end;
+     font-size: 3rem;
+     width: 100%;
+}
+.loopsnmodes_body {
+     display: flex;
+     width: 100%;
+     background-color: #f0f0f0;
+     justify-content: flex-start;
+     align-items: center;
+     font-size: 1.4rem;
+}
+.pic {
+     display: flex;
+     width: 100%;
+     height: auto;
+     margin: 1rem;
+     box-shadow: 5px 5px 20px;
+}
+.picfixer {
+     display: flex;
+     width: 40rem;
+     justify-content: space-between;
+     margin: auto;
+}
+
+/* Code for Build */
+
+a.tracking-in-expand {
+     display: flex;
+     justify-content: center;
+     color: white;
+     text-decoration: none;
+     text-align: center;
+     background-color: #348dd8;
+     font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+     font-size: 2rem;
+     padding: 4px;
+     margin: 0 1rem 0 1rem;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+     border-radius: 8px;
+     -webkit-box-shadow: 0px 9px 0px #2475be, 0px 9px 25px rgba(0,0,0,.7);
+     -moz-box-shadow: 0px 9px 0px #2475be, 0px 9px 25px rgba(0,0,0,.7);
+     box-shadow: 0px 9px 0px #2475be, 0px 9px 25px rgba(0,0,0,.7);
+
+     transition: all .5s ease;
+}
+
+a.tracking-in-expand:active {
+     -webkit-box-shadow: 0px 3px 0px #0d4f8b, 0px 3px 6px rgba(0,0,0,.9);
+     -moz-box-shadow: 0px 3px 0px #0d4f8b, 0px 3px 6px rgba(0,0,0,.9);
+     box-shadow: 0px 3px 0px #0d4f8b, 0px 3px 6px rgba(0,0,0,.9);
+}
+
+a.tracking-in-expand:hover:after {
+     content:" Digital Marketing Solutions ➜";
+     -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* Code for Text Animation */
+
+@-webkit-keyframes tracking-in-expand {
+     0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+     }
+     40% {
+          opacity: 0.6;
+     }
+     100% {
+          opacity: 1;
+     }
+}
+@keyframes tracking-in-expand {
+     0% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+     }
+     40% {
+          opacity: 0.6;
+     }
+     100% {
+          opacity: 1;
+     }
+}
+
+/* Dropdown Menu Code (https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover) */
+
+.dropdown {
+     position: relative;
+     display: inline-block;
+}
+
+.dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f1f1f1;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+}
+
+.build:hover .dropdown-content {
+     display: block;
+}
+
+.dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.build:hover .dropdown-content {
+     display: block;
+}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
