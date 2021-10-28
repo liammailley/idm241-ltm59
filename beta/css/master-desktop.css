@@ -39,13 +39,16 @@
      .header_gif {
           display: flex;
           height: auto;
+          width: 30%;
           margin: 1rem;
           box-shadow: 5px 5px 20px;
           border: 5px solid #f6da36;
      }
      .header_giffixer {
           display: flex;
+          flex-direction: row;
           justify-content: space-between;
+          width: 100%;
      }
      .boxes {
           display: flex;
