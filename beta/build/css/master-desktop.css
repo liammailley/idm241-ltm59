@@ -1,4 +1,38 @@
 @media only screen and (min-width: 1250px) { /* THIS ONE IS ONLY USED WHEN IT'S MORE THAN 1250px */
+
+     /* General Styling */
+
+     body {
+          margin: 0;
+     }
+     p {
+          font-family: 'Aktiv Grotesk Corp', Georgia, "Times New Roman", Times, serif;
+     }
+     h1 {
+          font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+          color: black;
+     }
+     h2 {
+          font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+          color: #348dd8;
+     }
+     h3 {
+          font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+     }
+     a {
+          font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+          font-size: 2rem;  
+     }
+     ul {
+          font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+          font-size: 1.2rem;
+          margin-right: 0.5rem;
+     }
+     a {
+          font-family: 'Aktiv Grotesk Corp', Arial, Helvetica, sans-serif;
+          margin-left: 1.5rem;
+          padding: 0.75rem 0 0.75rem 0;
+     }
      header {
           display: flex;
           flex-flow: row wrap;
@@ -197,7 +231,6 @@
           animation-iteration-count: 1;
           animation-direction: alternate;
      }
-}
 
 /* Code for Text Animation */
 
@@ -270,6 +303,7 @@
      width: 40rem;
      color: white;
      padding: 4px;
+     margin-left: 1rem;
      -webkit-border-radius: 8px;
      -moz-border-radius: 8px;
      border-radius: 8px;
@@ -300,4 +334,6 @@
      padding: 12px 16px;
      text-decoration: none;
      display: block;
+}
+
 }
