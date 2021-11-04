@@ -179,6 +179,11 @@
 
           transition: all .5s ease-in-out;
      }
+     a.tracking-in-expand:after {
+          content:" Digital Marketing Solutions ➜";
+          -webkit-animation: tracking-in-contract 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          animation: tracking-in-contract 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+     }
      a.tracking-in-expand:active {
           -webkit-box-shadow: 0px 3px 0px #0d4f8b, 0px 3px 6px rgba(0,0,0,.9);
           -moz-box-shadow: 0px 3px 0px #0d4f8b, 0px 3px 6px rgba(0,0,0,.9);
@@ -186,10 +191,13 @@
      }
      a.tracking-in-expand:hover:after {
           content:" Digital Marketing Solutions ➜";
-          -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-          animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+          animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+
+          animation-iteration-count: 1;
           animation-direction: alternate;
      }
+}
 }
 
 /* Code for Text Animation */
@@ -205,6 +213,7 @@
      100% {
           opacity: 1;
      }
+
 }
 @keyframes tracking-in-expand {
      0% {
@@ -216,6 +225,32 @@
      }
      100% {
           opacity: 1;
+     }
+}
+
+@-webkit-keyframes tracking-in-contract {
+     0% {
+          opacity: 1;
+     }
+     40% {
+          opacity: 0.6;
+     }
+     100% {
+          letter-spacing: -0.5em;
+          opacity: 0;
+     }
+
+}
+@keyframes tracking-in-contract {
+     0% {
+          opacity: 1;
+     }
+     40% {
+          opacity: 0.6;
+     }
+     100% {
+          letter-spacing: -0.5em;
+          opacity: 0;
      }
 }
 
@@ -242,11 +277,13 @@
      -webkit-box-shadow: 0px 9px 0px #4197DC, 0px 9px 25px rgba(0,0,0,.7);
      -moz-box-shadow: 0px 9px 0px #4197DC, 0px 9px 25px rgba(0,0,0,.7);
      box-shadow: 0px 9px 0px #4197DC, 0px 9px 25px rgba(0,0,0,.7);
+     transition: all .5s ease-in-out;
 }
 
 .dropdown-item {
      color: white;
-     width: 100%;
+     width: 90%;
+     text-align: center;
      background-color: #53A0DF;
 }
 
@@ -256,6 +293,7 @@
      animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
      animation-delay: 0.5s;
      animation-direction: alternate;
+     transition: all .5s ease-in-out;
 }
 
 .dropdown-content a {

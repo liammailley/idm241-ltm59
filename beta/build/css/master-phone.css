@@ -275,6 +275,13 @@ a.tracking-in-expand:hover:after {
      z-index: 1;
 }
 
+.dropdown-item {
+     color: white;
+     width: 90%;
+     text-align: center;
+     background-color: #53A0DF;
+}
+
 .build:hover .dropdown-content {
      display: block;
 }
