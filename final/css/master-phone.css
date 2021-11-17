@@ -12,7 +12,6 @@
      
      h1{
           position: relative;
-          margin-bottom: 45px;
           font-family: 'Oswald', sans-serif;
           font-size: 44px;
           text-transform: uppercase;
@@ -38,7 +37,6 @@
      .item:hover {
           flex: 7;
      }
-
      .item:active {
           flex: 7;
      }
@@ -62,5 +60,4 @@
      .item-5 { 
           background-image: url('../images/mugs.jpg');
      }
-     
 }
