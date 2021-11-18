@@ -29,6 +29,7 @@ header {
      margin: auto;
      padding: 0.2rem 0;
      z-index: 2;
+     margin-bottom: 1rem;
  }
  
  main {
@@ -42,7 +43,7 @@ header {
      display: flex;
      justify-content: center;
      letter-spacing: 0.2rem;
-     font-size: 1.5rem;
+     font-size: 2rem;
      font-weight: bold;
      color: #000000;
      text-align: center;
@@ -54,4 +55,14 @@ h2.name {
      display: flex;
      justify-content: center;
      color: #000000;
+}
+
+.big {
+     font-family: 'NCS Radhiumz', 'Chai', Georgia, "Times New Roman", Times, serif;
+     margin: 1rem 2rem;
+}
+
+.small {
+     font-family: 'Chai', Georgia, "Times New Roman", Times, serif;
+     margin: 1rem 2rem;
 }
