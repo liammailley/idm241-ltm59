@@ -28,7 +28,7 @@
           <h1>Gallery</h1>
           
           <div class="gallery-wrap">
-               <div class="item item-1">
+               <div id="handle" class="item item-1">
                     <div class="item_hoverbox">
                          <a id="myBtn_digArt" class="item_text">Digital Art</a>
                     </div>
@@ -59,9 +59,9 @@
      <!-----------------------------MODAL CODE-------------------------------------------->
 
      <div id="myModal_digArt" class="modal">
-          <div class="modal-content">
+          <div id="myModal_digArt-content" class="modal-content">
                <span class="close_digArt">&times;</span>
-               <h1>Digital Art</h1>
+               <h1 class="contenttitle">Digital Art</h1>
                
                <main class="contentmain">
 
@@ -166,9 +166,9 @@
      </div>
 
      <div id="myModal_physArt" class="modal">
-          <div class="modal-content">
+          <div id="myModal_physArt-content" class="modal-content">
                <span class="close_physArt">&times;</span>
-               <h1>Physical Art</h1>
+               <h1 class="contenttitle">Physical Art</h1>
 
                <main class="contentmain">
 
@@ -246,9 +246,9 @@
      </div>
 
      <div id="myModal_uxui" class="modal">
-          <div class="modal-content">
+          <div id="myModal_uxui-content" class="modal-content">
                <span class="close_uxui">&times;</span>
-               <h1>UX/UI Work</h1>
+               <h1 class="contenttitle">UX/UI Work</h1>
 
                <div class="content">
                     <img src="images/home.svg" alt="Jersey Shore Pirates" class="contentimages">
@@ -269,9 +269,9 @@
      </div>
 
      <div id="myModal_photo" class="modal">
-          <div class="modal-content">
+          <div id="myModal_photo-content"class="modal-content">
                <span class="close_photo">&times;</span>
-               <h1>Photography</h1>
+               <h1 class="contenttitle">Photography</h1>
 
                <main class="contentmain">
 
@@ -296,14 +296,23 @@
      </div>
 
      <div id="myModal_case" class="modal">
-          <div class="modal-content">
+          <div id="myModal_case-content"class="modal-content">
                <span class="close_case">&times;</span>
-               <h1>Case Studies</h1>
+               <h1 class="contenttitle">Case Studies</h1>
                <h2>All future case studies will be uploaded here! Check back soon!</h2>
           </div>
      </div>
 
-     <!-----------------------------MODAL SCRIPT----------------------->
+
+
+     <script>
+          var slideSource = document.getElementById('myModal_digArt');
+
+          document.getElementById('handle').onclick = function () {
+               slideSource.classList.toggle('fade');
+          }
+     </script>
+
 
 <script> // --------------- DIGITAL ART MODAL --------------------
      var modal_digArt = document.getElementById("myModal_digArt");
@@ -313,19 +322,21 @@
      btn_digArt.onclick = function() {
           whoosh1Obj.play();
           modal_digArt.style.display = "block";
+          document.getElementById("myModal_digArt-content").animate([
+               // keyframes
+               { transform: 'scale(0.1)' },
+               { transform: 'scale(1)' }
+               ], {
+               // timing options
+               duration: 250,
+               iterations: 1,
+          });
      }
      // When the user clicks on <span> (x), close the modal
-     span_digArt.onclick = function() {
-          whoosh2Obj.play();
-          modal_digArt.style.display = "none";
-     }
-     // When the user clicks anywhere outside of the modal, close it
-     window.onclick = function(event_digArt) {
-          if (event_digArt.target == modal_digArt) {
-               whoosh2Obj.play();
-               modal_digArt.style.display = "none";
+          span_digArt.onclick = function() {
+                    modal_digArt.style.display = "none";
+                    whoosh2Obj.play();
           }
-     }
 </script>
 
 <script> // --------------- PHYSICAL ART MODAL --------------------
@@ -336,18 +347,20 @@
      btn_physArt.onclick = function() {
           whoosh1Obj.play();
           modal_physArt.style.display = "block";
+          document.getElementById("myModal_physArt-content").animate([
+               // keyframes
+               { transform: 'scale(0.1)' },
+               { transform: 'scale(1)' }
+               ], {
+               // timing options
+               duration: 250,
+               iterations: 1,
+          });
      }
      // When the user clicks on <span> (x), close the modal
      span_physArt.onclick = function() {
           whoosh2Obj.play();
           modal_physArt.style.display = "none";
-     }
-     // When the user clicks anywhere outside of the modal, close it
-     window.onclick = function(event_physArt) {
-          if (event_physArt.target == modal_physArt) {
-               whoosh2Obj.play();
-               modal_physArt.style.display = "none";
-          }
      }
 </script>
 
@@ -359,18 +372,20 @@
      btn_uxui.onclick = function() {
           whoosh1Obj.play();
           modal_uxui.style.display = "block";
+          document.getElementById("myModal_uxui-content").animate([
+               // keyframes
+               { transform: 'scale(0.1)' },
+               { transform: 'scale(1)' }
+               ], {
+               // timing options
+               duration: 250,
+               iterations: 1,
+          });
      }
      // When the user clicks on <span> (x), close the modal
      span_uxui.onclick = function() {
           whoosh2Obj.play();
           modal_uxui.style.display = "none";
-     }
-     // When the user clicks anywhere outside of the modal, close it
-     window.onclick = function(event_uxui) {
-          if (event_uxui.target == modal_uxui) {
-               whoosh2Obj.play();
-               modal_uxui.style.display = "none";
-          }
      }
 </script>
 
@@ -382,18 +397,20 @@
      btn_photo.onclick = function() {
           whoosh1Obj.play();
           modal_photo.style.display = "block";
+          document.getElementById("myModal_photo-content").animate([
+               // keyframes
+               { transform: 'scale(0.1)' },
+               { transform: 'scale(1)' }
+               ], {
+               // timing options
+               duration: 250,
+               iterations: 1,
+          });
      }
      // When the user clicks on <span> (x), close the modal
      span_photo.onclick = function() {
           whoosh2Obj.play();
           modal_photo.style.display = "none";
-     }
-     // When the user clicks anywhere outside of the modal, close it
-     window.onclick = function(event_photo) {
-          if (event_photo.target == modal_photo) {
-               whoosh2Obj.play();
-               modal_photo.style.display = "none";
-          }
      }
 </script>
 
@@ -405,24 +422,26 @@
      btn_case.onclick = function() {
           whoosh1Obj.play();
           modal_case.style.display = "block";
+          document.getElementById("myModal_case-content").animate([
+               // keyframes
+               { transform: 'scale(0.1)' },
+               { transform: 'scale(1)' }
+               ], {
+               // timing options
+               duration: 250,
+               iterations: 1,
+          });
      }
      // When the user clicks on <span> (x), close the modal
      span_case.onclick = function() {
           whoosh2Obj.play();
           modal_case.style.display = "none";
      }
-     // When the user clicks anywhere outside of the modal, close it
-     window.onclick = function(event_case) {
-          if (event_case.target == modal_case) {
-               whoosh2Obj.play();
-               modal_case.style.display = "none";
-          }
-     }
 </script>
 
      <main>
           <div class="boxes">
-               <div class="box">
+               <!--<div class="box">
                     <h1 class="big">
                          Examples
                     </h1>
@@ -437,7 +456,7 @@
                          <br>
                          <a>Illustrates the text hover effect.</a>              
                     </div>
-               </div>
+               </div>-->
                <div class="box">
                     <h1 class="big">
                          URL
@@ -467,6 +486,7 @@
                               <li>If a user hovers over one of the pictures in the accordion, that individual picture will expand and slightly zoom in</li>
                               <li>This will also cause a text overlay to fade in, which describes the section of the portfolio</li>
                               <li>Upon clicking on one of these pictures, a modal will appear detailing the section</li>
+                              <li>The user can clsoe the modal by clicking the X button in the top right corner</li>
                               <li>Every time the user opens or closes a modal, a whoosh sound effect will play</li>
                          </ul>
                     </div>
@@ -479,9 +499,10 @@
                          <ul>
                               <li>On hover, Cursor changes to pointer</li>
                               <li>If a user hovers over one of the pictures in the accordion, that individual picture will expand and slightly zoom in</li>
-                              <li>This will also cause a text overlay to slide up on the bottom of the picture, which gives a short summary of the section or project</li>
-                              <li>Upon clicking on one of these pictures, a modal will appear detailing the project</li>
-                              <li>Every time the user hovers over a new picture, a whoosh sound effect will play</li>
+                              <li>This will also cause a text overlay to fade in, which describes the section of the portfolio</li>
+                              <li>Upon clicking on one of these pictures, a modal will appear detailing the section</li>
+                              <li>The user can clsoe the modal by clicking the X button in the top right corner</li>
+                              <li>Every time the user opens or closes a modal, a whoosh sound effect will play</li>
                          </ul>
                     </div>
                </div>
