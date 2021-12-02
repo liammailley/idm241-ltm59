@@ -1,4 +1,4 @@
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1160px) {
      html,body{
           width: 100%;
           height: 100%;
@@ -37,12 +37,14 @@
      .item_hoverbox {
           display: flex;
           width: 100%;
+          height: 100%;
           opacity: 0;
-          transition: flex 1s ease;
+          background-color: black;
      }
 
      .item_hoverbox:hover {
           opacity: 1;
+          animation: backgroundfade 1.0s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
      }
 
      .item_text {
@@ -51,8 +53,11 @@
           justify-content: center;
           align-items: center;
           text-align: center;
-     }*/
-
+          opacity: 0;
+          transition: flex 0.8s ease-in-out;
+          animation: fadein 2.0s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          color: white;
+     }
 
      .item:hover{
           opacity: 1;
@@ -61,6 +66,49 @@
      .item:active {
           flex: 7;
      }
+
+     @-webkit-keyframes fadein {
+          0% {
+               letter-spacing: -0.5em;
+               opacity: 0;
+          }
+          40% {
+               opacity: 0.5;
+          }
+          100% {
+               opacity: 1;
+          }
+     }
+     @keyframes fadein {
+          0% {
+               letter-spacing: -0.5em;
+               opacity: 0;
+          }
+          40% {
+               opacity: 0.5;
+          }
+          100% {
+               opacity: 1;
+          }
+     }
+
+     @-webkit-keyframes backgroundfade {
+          0% {
+               opacity: 0;
+          }
+          100% {
+               opacity: 0.5;
+          }
+     }
+     @keyframes backgroundfade {
+          0% {
+               opacity: 0;
+          }
+          100% {
+               opacity: 0.5;
+          }
+     }
+
      
      .item-1 { 
           background-image: url('../images/anothersprout.jpg');
@@ -112,6 +160,10 @@
      border: 1px solid #888;
      width: 80%;
    }
+
+   h1.contenttitle {
+     font-size: 1.2rem;
+}
    
    /* The Close Button */
    .close {
@@ -197,4 +249,212 @@
      text-decoration: none;
      cursor: pointer;
    }
+
+   /* OLD RESUME CODE */
+
+   .contentmain {
+     display: grid;
+     grid-template-columns: 50% 50%;
+ }
+
+ .contenttitle {
+     font-family: 'NCS Radhiumz', Arial, Helvetica, sans-serif;
+     margin: 1rem;
+ }
+
+ .contentdesc {
+     margin: 1rem;
+ }
+
+ .contentimages {
+     max-width: 100%;
+     max-height: 100%;
+ }
+
+ #firstleft {
+     grid-column: 1;
+     grid-row: 1;
+     border: 20px solid #fdf0d5;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 25rem;
+     text-align: right;
+     float: right;
+ }
+
+ #firstright {
+     grid-column: 2;
+     grid-row: 1;
+     border: 20px solid #fdf0d5;
+     max-width: 100%;
+     height: 25rem;
+     text-align: left;
+     float: left;
+ }
+
+ #secondleft {
+     grid-column: 1;
+     grid-row: 2;
+     border: 20px solid #fdf0d5;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 25rem;
+     text-align: right;
+     float: right;
+ }
+
+ #secondright {
+     grid-column: 2;
+     grid-row: 2;
+     border: 20px solid #fdf0d5;
+     max-width: 100%;
+     height: 25rem;
+     text-align: left;
+     float: left;
+ }
+
+ #thirdleft {
+     grid-column: 1;
+     grid-row: 3;
+     border: 20px solid #fdf0d5;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 25rem;
+     text-align: right;
+     float: right;
+ }
+
+ #thirdright {
+     grid-column: 2;
+     grid-row: 3;
+     border: 20px solid #fdf0d5;
+     max-width: 100%;
+     height: 25rem;
+     text-align: left;
+     float: left;
+ }
+
+ #fourthleft {
+     grid-column: 1;
+     grid-row: 4;
+     border: 20px solid #fdf0d5;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 25rem;
+     text-align: right;
+     float: right;
+ }
+
+ #fourthright {
+     grid-column: 2;
+     grid-row: 4;
+     border: 20px solid #fdf0d5;
+     max-width: 100%;
+     height: 25rem;
+     text-align: left;
+     float: left;
+ }
+
+ #fifthleft {
+     grid-column: 1;
+     grid-row: 5;
+     border: 20px solid #fdf0d5;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 25rem;
+     text-align: right;
+     float: right;
+ }
+
+ #fifthright {
+     grid-column: 2;
+     grid-row: 5;
+     border: 20px solid #fdf0d5;
+     max-width: 100%;
+     height: 25rem;
+     text-align: left;
+     float: left;
+ }
+
+ #sixthleft {
+     grid-column: 1;
+     grid-row: 6;
+     border: 20px solid #fdf0d5;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 25rem;
+     text-align: right;
+     float: right;
+ }
+
+ #sixthright {
+     grid-column: 2;
+     grid-row: 6;
+     border: 20px solid #fdf0d5;
+     max-width: 100%;
+     height: 25rem;
+     text-align: left;
+     float: left;
+ }
+
+ #seventhleft {
+     grid-column: 1;
+     grid-row: 7;
+     border: 20px solid #fdf0d5;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 25rem;
+     text-align: right;
+     float: right;
+ }
+
+ #seventhright {
+     grid-column: 2;
+     grid-row: 7;
+     border: 20px solid #fdf0d5;
+     max-width: 100%;
+     height: 25rem;
+     text-align: left;
+     float: left;
+ }
+
+ #topleft {
+     grid-column: 1;
+     grid-row: 1;
+     border: 8px solid #fdf0d5;
+     background-image: url("../images/walking.webp");
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 20.3125rem;
+ }
+
+ #topright {
+     grid-column: 2;
+     grid-row: 1;
+     border: 8px solid #fdf0d5;
+     background-image: url("../images/mugs.webp");
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 20.3125rem;
+ }
+
+ #bottomleft {
+     grid-column: 1;
+     grid-row: 2;
+     background-image: url("../images/metedeconk.webp");
+     border: 8px solid #fdf0d5;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 20.3125rem;
+ }
+
+ #bottomright {
+     grid-column: 2;
+     grid-row: 2;
+     background-image: url("../images/theamericandream.webp");
+     border: 8px solid #fdf0d5;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 20.3125rem;
+ }
 }
